@@ -19,11 +19,13 @@ namespace ExercicioAVAEstrSelecao
 
         private void btnFechar_Click(object sender, EventArgs e)
         {
+            // fecha a aplicação
             Application.Exit();
         }
 
         private void FrmDiaSemana_Load(object sender, EventArgs e)
         {
+            // limpa o Label que mostra o dia da semana
             lblDiaSemana.ResetText();
         }
 
@@ -34,6 +36,8 @@ namespace ExercicioAVAEstrSelecao
 
             // Verificar se o que foi digitado é mesmo um nº inteiro
             dia = Convert.ToInt16(txtDia.Text);
+
+            //TODO: Ajustar o programa para ler uma letra e não travar.
 
             // verificar qual dia exibir com base no dia digitado
             switch (dia)
